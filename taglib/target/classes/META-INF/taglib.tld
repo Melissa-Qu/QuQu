@@ -1,0 +1,27 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <short-name>simple-tags</short-name>
+    <uri>http://mantiso.com/simple</uri>
+    <jsp-version>2.2</jsp-version>
+
+    <tag-file>
+        <name>helloworld</name>
+        <path>/META-INF/tags/helloworld.tag</path>
+    </tag-file>
+
+    <tag>
+        <name>Simple</name>
+        <tag-class>com.mantiso.Simple</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>repeat</name>
+        <tag-class>com.mantiso.Repeat</tag-class>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>repeat</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
